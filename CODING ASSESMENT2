@@ -1,0 +1,29 @@
+package numericData;
+
+public class Exercise2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String semester1= "1";
+		String semester2= "2";
+		String matrix="CC188888";
+		double GPA1=3.5;
+		double GPA2=3.2;
+		double CreditHour1=19;
+		double CreditHour2=20;
+		double Average1;
+		double totalch;
+		double CGPA;
+		
+		Average1=(CreditHour1*GPA1)+(CreditHour2*GPA2);
+		totalch=CreditHour1+CreditHour2; 
+		CGPA=Average1/totalch;
+		String name ="Ali";
+		String classroom ="second class";
+		
+		System.out.printf(name+" with matrix number:"+matrix+" which in "+semester1+" semester get the GPA with "+GPA1+" which have "+CreditHour1+" credit hour");
+		System.out.printf("\nIn "+semester2+" semester Ali get the GPA with "+GPA2+" which have "+CreditHour2+" credit hour");
+		System.out.printf("\nSo Ali get the CGPA with %.2f which in "+classroom,CGPA);
+	}
+
+}
