@@ -1,0 +1,84 @@
+package numericData;
+import java.util.Scanner;
+public class Exercise3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int number1;//Declare 5 integer variables and assign a value
+		int number2;
+		int number3;
+		int number4;
+		int number5;
+		int number66;
+		double balance1,balance2,wd;
+		int totalnumber=5;
+		String name;
+		double number6=66;
+		double number7=77;
+		float number8=88;
+		float number9=99;
+		double multiplication;
+		int sum;//Declare an integer variable called sum to hold the sum
+		int average;//Declare an integer variable called sum to hold the average
+		double divide;
+		float divide1;
+		float play;
+		char y;
+		char n;
+		
+		Scanner scanMe=new Scanner(System.in);
+		System.out.print("PLease enter your name:");
+		name=scanMe.nextLine();
+		
+		System.out.println("Please enter your balance");
+		balance1=scanMe.nextDouble();
+		System.out.println("Please enter your withdraw money amount");
+		wd=scanMe.nextDouble();
+		balance2=balance1-wd;
+		System.out.print("Your current balance is RM"+balance2);
+		System.out.println("\nDo you want to continue :Yes-Y No-N");
+		y=scanMe.next().charAt(0);
+		System.out.println("Yes "+y);
+		n=scanMe.next().charAt(0);
+		System.out.println("NO "+n);
+		
+		
+		balance2=balance1-wd;
+		System.out.print("Please enter a number1 :");
+		number1=scanMe.nextInt();
+		System.out.print("Please enter a number2 :");
+		number2=scanMe.nextInt();
+		System.out.print("Please enter a number3:");
+		number3=scanMe.nextInt();
+		System.out.print("Please enter a number4:");
+		number4=scanMe.nextInt();
+		System.out.print("Please enter a number5:");
+		number5=scanMe.nextInt();
+		System.out.print("Please enter a number6:");
+		number66=scanMe.nextInt();
+		System.out.println("Name :"+name);
+		System.out.println("Amount is RM"+number66);
+		sum= number1+ number2+number3+number4+number5+number66;//Compute the sum
+
+
+
+		average= sum/totalnumber;//Compute the average
+		divide=number7/number6;
+		divide1=number9/number8;
+		multiplication= number1*number2*number3*number4*number5*number6*number7*number8*number9;
+		play= (number1*number2)/number3;
+		System.out.print("\nThe sum is ");//Print a descriptive string
+										//Cursor stays after the printed string
+		System.out.println(sum);//print the value stored in variable sum
+								//Cursor advances to the beginning of the next line
+		System.out.print("The average is ");//Print a descriptive string
+		System.out.println(average);
+		System.out.printf("The divider for number5 with number2 is :%.2f ",divide);//Print a descriptive string
+		System.out.printf("\nThe divider for number9 with number8 is %.2f" ,divide1);//Print a descriptive string
+		System.out.println("\nthe multiplication is"+multiplication);
+		System.out.printf("The ans for play is :%.2f ",play);//Print a descriptive string
+
+			
+	}
+
+}
